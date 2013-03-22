@@ -25,7 +25,7 @@ our @EXPORT = qw(
 	ok alias run_tests	
 );
 
-our $VERSION = '0.01_01';
+our $VERSION = '0.01_02';
 
 use IO::Socket::INET;
 use Carp;
@@ -151,29 +151,27 @@ Net::PortTest - Perl extension for running banner tests against INET services
 
 =head1 DESCRIPTION
 
-Stub documentation for Net::PortTest, created by h2xs. It looks like the
-author of the extension was negligent enough to leave the stub
-unedited.
+This module is used as a framework for quickly and easily defining functions
+used to check internet services.  The simplest examples are in the code,
+and they show how to execute a naiive IMAP banner check against an IP
+address.
 
 =head2 EXPORT
 
-None by default.  But this module will export:
+This module will export the following functions into the main namespace:
 
-C<run_tests>, C<on> and C<alias> when the module is loaded with:
+C<run_tests>, C<on> and C<alias> 
+
+when the module is loaded with:
 
   use Net::PortTest ':all';
 
-
 =head1 SEE ALSO
 
-Mention other useful documentation such as the documentation of
-related modules or operating system documentation (such as man pages
-in UNIX), or any relevant external documentation such as RFCs or
-standards.
+This module makes use of L<Net::Socket::INET> for the communications
+with the external services.
 
-If you have a mailing list set up for your module, mention it here.
-
-If you have a web site set up for your module, mention it here.
+Please submit all bugs via L<< https://github.com/petermblair/Perl-CPAN/issues >>
 
 =head1 AUTHOR
 
