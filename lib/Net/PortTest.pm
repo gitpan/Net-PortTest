@@ -25,7 +25,7 @@ our @EXPORT = qw(
 	ok alias run_tests	
 );
 
-our $VERSION = '0.01';
+our $VERSION = '0.010001';
 
 use IO::Socket::INET;
 use Carp;

@@ -6,9 +6,9 @@ WriteMakefile(
     NAME              => 'Net::PortTest',
     VERSION_FROM      => 'lib/Net/PortTest.pm', # finds $VERSION
     PREREQ_PM         => {
-	'IO::Socket::INET' => '>0',      
-	'Carp'		   => '>0',
-	'Time::HiRes'	   => '>0',
+	'IO::Socket::INET' => '0',      
+	'Carp'		   => '0',
+	'Time::HiRes'	   => '0',
     }, # e.g., Module::Name => 1.1
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM  => 'lib/Net/PortTest.pm', # retrieve abstract from module
