@@ -25,7 +25,7 @@ our @EXPORT = qw(
 	ok alias run_tests	
 );
 
-our $VERSION = '0.01_02';
+our $VERSION = '0.01';
 
 use IO::Socket::INET;
 use Carp;
@@ -73,7 +73,6 @@ sub run_tests {
 
 	for my $port ( @ports ){
 		if( defined $portmap->{$port} ){
-			print "Port testing port $port against $hostname\n";
 			my $fnref = $portmap->{$port};
 
 			my $sock = IO::Socket::INET->new(
@@ -123,7 +122,6 @@ Net::PortTest - Perl extension for running banner tests against INET services
 =head1 SYNOPSIS
 
   use Net::PortTest;
-  blah blah blah
 
   on 143 => sub {
       my $sock = shift;
